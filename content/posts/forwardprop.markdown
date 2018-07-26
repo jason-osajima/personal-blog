@@ -41,7 +41,7 @@ Notice that we are using the superscript $(i)$ to denote the ith training exampl
 
 $$\textbf{X} = \begin{bmatrix}
     | & | & ... & | \\
-   \textbf{x}^{(2)} & \textbf{x}^{(2)} & ... & \textbf{x}^{(m)} \\
+   \textbf{x}^{(1)} & \textbf{x}^{(2)} & ... & \textbf{x}^{(m)} \\
    | & | & ... & |
 \end{bmatrix}$$
 
@@ -88,7 +88,7 @@ Notice that our neural network has 4 layers of nodes, but we said in the beginni
 
 *Diagram with hidden layers.*
 
-In our diagram, we now have hidden layers $\textbf{a}^{(i)[1]}$ and $\textbf{a}^{(i)[2]}$, and output layer $\textbf{a}^{(i)[3]} = \hat{y}^{(i)}$ represented and our 3 layer hidden network is defined in our diagram. This confused me from the beginning because it's a 3-layer Neural Network with 2 hidden layers. So the number of hidden layers is 1 - number of layers, since we count the output as a layer.
+In our diagram, we now have hidden layers $\textbf{a}^{(i)[1]}$ and $\textbf{a}^{(i)[2]}$, and output layer $\textbf{a}^{(i)[3]} = \hat{y}^{(i)}$ represented and our 3 layer hidden network is defined in our diagram. This confused me from the beginning because it's a 3-layer Neural Network with 2 hidden layers. So the number of hidden layers is number of layers - 1, since we count the output as a layer.
 
 We can also vectorize our hidden layers the same way we vectorized our input ($\textbf{X}$) and output ($\hat{\textbf{Y}}$) by lining up the vectors for a hidden layer $j$:
 
@@ -114,7 +114,7 @@ From the diagram, you can see that the input consists of all the entries from th
 
 {% img /images/nn_5.png [nn_5] %}
 
-In order to calculate $a_1^{(i)[1]}$, we take each entry from $\textbf{x}^{(i)}$ and multiply it by a weight. The notation can be a little tricky, so let's break that down. Let's say we have $W^{[1]}_{13}$. We multiply this guy by the third entry in $\textbf{x}$, or $x^{(i)}_1$ to get the first entry in the $1st$ layer.
+In order to calculate $a_1^{(i)[1]}$, we take each entry from $\textbf{x}^{(i)}$ and multiply it by a weight. The notation can be a little tricky, so let's break that down. Let's say we have $W^{[1]}_{13}$. We multiply this guy by the third entry in $\textbf{x}$, or $x^{(i)}_3$ to get the first entry in the $1st$ layer.
 
 Let's breakdown the weights corresponding to $a_1^{(i)[1]}$ in our diagram. $\textbf{W}^{[1]}$ is a $(4, 3)$ matrix:
 

@@ -337,7 +337,7 @@ $$f(\textbf{x}) =
     f_n((x_{11}, x_{21}, \dotsc, x_{m1})) \\\\
 \end{bmatrix}$$
 
-So $f(\textbf{x})$ is a (m, 1) column vector. It could also be a row vector, depending on how you define it.
+So $f(\textbf{x})$ is a (n, 1) column vector. It could also be a row vector, depending on how you define it.
 
 So then, the Jacobian Matrix of $f$ with respect to $\textbf{x}$ is defined to be: 
 
@@ -354,7 +354,7 @@ $$ \dfrac{\partial\mathcal{f}}{\partial \mathbf{x}} =
 \end{bmatrix}
 $$
 
-Notice that the matrix has dimensions $(n, m)$. It gets its first dimension from the number of entries in the input vector $\textbf{x}$ and its second dimensions from the number of entries in the output vector $\mathcal{f}(\textbf{x})$, regardless of whether those vectors are column or row vectors. So actually, if $\textbf{x}$ was a row vector, we would get:
+Notice that the matrix has dimensions $(n, m)$. It gets its first dimension from the number of entries in the output vector $\mathcal{f}(\textbf{x})$ and its second dimensions from the number of entries in the input vector $\textbf{x}$, regardless of whether those vectors are column or row vectors. So actually, if $\textbf{x}$ was a row vector, we would get:
 
 $$ \dfrac{\partial\mathcal{f}}{\partial\mathbf{x}} = 
 \begin{bmatrix}
