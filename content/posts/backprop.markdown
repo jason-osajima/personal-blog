@@ -33,7 +33,7 @@ Kids that learn opening variations couldn't internalize these first principles a
 
 I think there are several ways that we can interpret this quote. For someone who is a machine learning practitioner, it may be good to take a model that you have a pretty good understanding of and try and simplify it to try to understand everything at its most basic level.
 
-The best resource for me to learn backpropagation has been Andrew Ng's [Deep Learning Specialization in Coursera]((https://www.coursera.org/specializations/deep-learning). He is always very clear about understanding the intutition behind the problem, defining the problem and then laying out the mathematical notation. In this blog post I will rely heavily on the notation and concepts used in his course.
+The best resource for me to learn backpropagation has been Andrew Ng's [Deep Learning Specialization in Coursera](https://www.coursera.org/specializations/deep-learning). He is always very clear about understanding the intutition behind the problem, defining the problem and then laying out the mathematical notation. In this blog post I will rely heavily on the notation and concepts used in his course.
 
 Let's make smaller circles.
 
