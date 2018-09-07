@@ -114,7 +114,7 @@ From the diagram, you can see that the input consists of all the entries from th
 
 {% img /images/nn_5.png [nn_5] %}
 
-In order to calculate $a_1^{(i)[1]}$, we take each entry from $\textbf{x}^{(i)}$ and multiply it by a weight. The notation can be a little tricky, so let's break that down. Let's say we have $W^{[1]}_{13}$. We multiply this guy by the third entry in $\textbf{x}$, or $x^{(i)}_3$ to get the first entry in the $1st$ layer.
+In order to calculate $a_1^{(i)[1]}$, we take each entry from $\textbf{x}^{(i)}$ and multiply it by a weight. The notation can be a little tricky, so let's break that down. Let's say we have $W^{[1]}_{13}$. We multiply this guy by the third entry in $\textbf{x}$, or $x^{(i)}_3$ to get the first entry in the $1st$ l ayer.
 
 Let's breakdown the weights corresponding to $a_1^{(i)[1]}$ in our diagram. $\textbf{W}^{[1]}$ is a $(4, 3)$ matrix:
 
@@ -199,13 +199,6 @@ First, what's happening when we transition from our vector of features for the f
 $$\textbf{z}^{(i)[1]} = \textbf{W}^{[1]}\textbf{x}^{(i)} + \textbf{b}^{[1]}$$
 
 So we start by multiplying $\textbf{x}^{(i)}$ by $\textbf{W}^{[1]}$. $\textbf{x}^{(i)}$ is a (3 x 1) matrix, and $\textbf{W}^{[1]}$ is a (4 x 3) matrix. We then add the bias, $\textbf{b}^{[1]}$. The dimensions of the bias $\textbf{b}^{[1]}$ match the dimensions of $\textbf{z}^{(i)[1]}$ which are (4, 1). Once we get the activity matrix $\textbf{z}^{(i)[1]}$, we apply the activation function to each element in $\textbf{z}^{(i)[1]}$. Recall that the activation function that we chose is ReLU, which we defined as:
-
-$$
-g(z) = \begin{cases}
-   x &\text{if } z > 0  \\
-   0 &\text{otherwise}
-\end{cases}
-$$
 
 So we get:
 

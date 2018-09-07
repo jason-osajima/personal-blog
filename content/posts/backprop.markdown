@@ -123,7 +123,7 @@ But notice that if we take the log of both sides, our objective stays the same. 
 $$log \ p(y | \hat{y}, \mathbf{x}) = log \ (y^{\hat{y}}(1-y)^{(1-\hat{y})})$$
 $$log \ p(y | \hat{y}, \mathbf{x}) = \hat{y}log \ y + (1-\hat{y})log \ (1-y)$$
 
-Notice that the left side just becomes $-\mathcal{L}(\hat{y}, y)$.
+Notice that the right side just becomes $-\mathcal{L}(\hat{y}, y)$.
 
 $$log \ p(y | \hat{y}, x) = -\mathcal{L}(\hat{y}, y)$$
 $$\mathcal{L}(\hat{y}, y) = -log \ p(y | \hat{y}, x)$$
