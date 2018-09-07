@@ -19,8 +19,6 @@ What attracted me to this model was its simplicity - the model shares most of th
 
 Similar to my first post on [forward propagation](/forwardprop) and [backpropagation](/backprop) for a vanilla neural network, I will walk through forward propagation and backpropagation for VGG-16 and discuss some of the advantages of using a ConvNet over a fully-connected neural network for computer vision tasks. VGG-16 is comparable in performance to VGG-19 but is simpler (it has three fewer layers) so we will roll with that.
 
-Next, I will walk through the code for VGG-16 in tensorflow and chronicle my progress training the model. In the original paper, it took the authors 2-3 weeks to train one model using 4 NVIDIA Titan Black GPUs. I don't have four GPUs that can run concurrently, so we'll see how it goes.
-
 ## Objective
 
 The objective for this task is to predict 5 (out of 1000) classes for each one of 100,000 test set images. The actual (ground truth) image label has to be one of the five predicted classes.
