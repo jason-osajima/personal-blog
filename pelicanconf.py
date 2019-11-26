@@ -29,7 +29,7 @@ PLUGINS = [
     'liquid_tags.video',  # embedding videos
     'liquid_tags.include_code',  # including code blocks
     'liquid_tags.literal',
-    'CName.minchin.pelican.plugins.cname', # for custom domain
+    'minchin.pelican.plugins.cname', # for custom domain
     "render_math" # for rendering math
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
