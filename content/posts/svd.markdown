@@ -95,4 +95,5 @@ Once you create the embeddings, how do you tell how similar embeddings are? Peop
 
 ### Resources
 1)  [Great video on SVD that explains the math](https://www.youtube.com/watch?v=P5mlg91as1c&t=236s)
+
 2) [Using SVD to coompress an image example](http://andrew.gibiansky.com/blog/mathematics/cool-linear-algebra-singular-value-decomposition/)
