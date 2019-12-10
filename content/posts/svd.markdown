@@ -3,7 +3,7 @@ slug: svd
 category: 
 date: 2019-11-22
 modified: 2019-11-22
-tags: machine learning, linear algebra
+tags: machine learning, linear algebra, natural language processing
 
 
 ## Introduction
@@ -92,8 +92,18 @@ How do you know what the value of $k$ is? A lot of people use trial and error, o
 
 Once you create the embeddings, how do you tell how similar embeddings are? People use cosine similarity, manhattan distance ($L1$), or euclidian distance ($L2$). In the example above, I used manhattan distance. Again, there's no default best metric to use and in practice people use trial and error.
 
+Some of the drawbacks of this method (as mentioned [here](https://github.com/stanfordnlp/cs224n-winter17-notes/blob/master/notes1.pdf)): 
+
+- Dimensions of the matrix can change often (adding new users or movies), and each time the dimensions change, SVD must be performed again. 
+- The matrix can be very high dimensional
+- Computational cost to perform SVD for a $m$ by $n$ matrix is $O(mn$)
+
+For these reasons, iterative methods tend to be better, the simplest of these being [word2vec](/word2vec).
+
 
 ### Resources
 1)  [Great video on SVD that explains the math](https://www.youtube.com/watch?v=P5mlg91as1c&t=236s)
 
 2) [Using SVD to coompress an image example](http://andrew.gibiansky.com/blog/mathematics/cool-linear-algebra-singular-value-decomposition/)
+
+3) [Notes from Stanford NLP course](https://github.com/stanfordnlp/cs224n-winter17-notes/blob/master/notes1.pdf)
