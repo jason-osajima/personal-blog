@@ -1,4 +1,4 @@
-title: word2vec CBOW and Skip-Gram
+title: word2vec - CBOW and Skip-Gram
 slug: word2vec
 category: 
 date: 2019-12-09
