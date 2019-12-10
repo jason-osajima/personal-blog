@@ -1,18 +1,16 @@
-title: word2vec
+title: word2vec CBOW and Skip-Gram
 slug: word2vec
 category: 
-date: 2019-11-22
-modified: 2019-11-22
-tags: machine learning, linear algebra, natural language processing
+date: 2019-12-09
+modified: 2019-12-09
+tags: machine learning, natural language processing
 
 
 ## Introduction
 
 <!-- PELICAN_BEGIN_SUMMARY -->
-
-<!-- PELICAN_END_SUMMARY -->
-
 word2vec is an iterative model that can be used to create embeddings of words (or embeddings of [pretty much anything](https://medium.com/airbnb-engineering/listing-embeddings-for-similar-listing-recommendations-and-real-time-personalization-in-search-601172f7603e)). In this post, we will talk briefly about why you would want to use word2vec, break down the Continuous Bag of Words (CBOW) and skip gram word2vec model, and implement it in tensorflow.
+<!-- PELICAN_END_SUMMARY -->
 
 ### Why use word2vec?
 For a lot of machine learning tasks, we need to figure out the relationship between items. Take for example an NLP task where we use words as items. We somehow need to learn numerical representations of words so that the model can understand the relationship between words. The most straightforward way of representing words numerically would be to represent them as vectors. So, imagine that we trained a model and learned vectors for each word. We'd expect that the word "cat" and "dog" would be close in distance since they are both pets, and that "cat" would be far from "gym", because there isn't much of a relationship between these two words. We sometimes call these vectors embeddings.
